@@ -229,7 +229,7 @@ class Medico extends Component{
                     })
 
                     this.handleCloseEditar();
-                    this.ListarUsuarios();                        
+                    this.ListarMedicos();                        
                 }         
             }))
             .catch((error) => {

@@ -60,7 +60,6 @@ class App extends Component{
             console.log("Ok", response);
             
             if(response.status === 200) {
-              // vamos salvar o id do usuário que foi retornado da api simulando um token
               console.log(response.data.token)
               localStorage.setItem("usuario", response.data.token);
               toastr.success("Login efetuado com sucesso!");
