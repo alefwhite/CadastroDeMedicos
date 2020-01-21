@@ -85,7 +85,7 @@ class App extends Component{
         <div className="container">         
           <form className="boxForm" onSubmit={this.RealizarLogin}>
             <h1>Entrar</h1>
-            <input type="email" name="email" placeholder="Usuário" onChange={this.AtualizaEstado}/>
+            <input type="email" name="email" placeholder="Email" onChange={this.AtualizaEstado}/>
             <input type="password" name="senha" placeholder="Senha" onChange={this.AtualizaEstado}/>
             <input type="submit" value="Entrar"/>
           </form>
