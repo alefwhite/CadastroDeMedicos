@@ -249,6 +249,7 @@ class Medico extends Component{
             }
         })
         .catch((error) => {
+            toastr.error("Médico possui especialidades cadastradas, não foi possível deletar");
             console.log(error);
         });
     }
