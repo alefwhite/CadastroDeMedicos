@@ -30,7 +30,7 @@ class Header extends Component{
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">                     
                         <Nav.Link href="/home">Home</Nav.Link>
-                        <Nav.Link href="/usuarios">Médicos</Nav.Link>
+                        <Nav.Link href="/medicos">Médicos</Nav.Link>
                     </Nav>                        
                     <Form inline>               
                         <Link to="/"onClick={() => this.logout()}> <Button variant="outline-light">Sair</Button></Link>
