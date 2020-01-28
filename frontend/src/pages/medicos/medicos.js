@@ -204,7 +204,7 @@ class Medico extends Component{
         // Abrir Modal
         setTimeout(() => {
             this.handleShowEspecialidade();
-        }, 2000);
+        }, 3500);
     }
 
     EfetuarEdicao = (event) => {
@@ -272,7 +272,10 @@ class Medico extends Component{
 
     handleShowEditar = () => this.setState({showEditar : true});
     
-    handleCloseEspecialidade = () => this.setState({showEspecialidade : false});
+    handleCloseEspecialidade = () => {
+        this.setState({showEspecialidade : false});
+        this.setState({adicionarEspecialidade : "Selecionar especialidade"});
+    }
     handleShowEspecialidade = () => this.setState({showEspecialidade : true});
 
     AtualizaEstado = (input) => {
