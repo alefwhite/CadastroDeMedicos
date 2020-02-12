@@ -244,8 +244,8 @@ class Medico extends Component{
         .then((response) => {
             console.log("Del :", response);
             if(response.status === 200) {
-                toastr.warning("Usuário deletado com sucesso!");
                 this.ListarMedicos();
+                toastr.warning("Usuário deletado com sucesso!");
             }
         })
         .catch((error) => {

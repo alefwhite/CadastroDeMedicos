@@ -54,21 +54,40 @@ class MedicoController {
     const id = req.params.id;
 
     mysql.getConnection((error, conn) => {
+
       if(error) { return console.error(error); }
 
       conn.query(
-        'DELETE FROM cad_medico WHERE id_medico = ?',
+        'DELETE FROM medico_especialidade WHERE id_medico = ?',
         [id],
         (error, result, fields) => {
           conn.release();
             
-          if(error) { return res.status(500).json({ error })}
+          if(error) { 
+            return res.status(500).json({ error });
+          }
+          else {
+            mysql.getConnection((error, conn) => {
 
-          return res.status(200).json({ message: 'Usuário deletado com sucesso.' });
+              if(error) { return console.error(error); }
+        
+              conn.query(
+                'DELETE FROM cad_medico WHERE id_medico = ?',
+                [id],
+                (error, result, fields) => {
+                  conn.release();
+                    
+                  if(error) { return res.status(500).json({ error });}
+        
+                  return res.status(200).json({ message: 'Médico deletado com sucesso.' });
+                }
+              )
+        
+            });
+          }         
         }
       )
-
-    });
+    });    
   }
 
   update(req, res) {

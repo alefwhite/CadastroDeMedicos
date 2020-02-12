@@ -52,6 +52,27 @@ class EspecialidadesMedicoController {
     });
   }
 
+  delete(req, res) {
+    const id = req.params.id;
+
+    mysql.getConnection((error, conn) => {
+      if(error) { return console.error(error); }
+
+      conn.query(
+        'DELETE FROM medico_especialidade WHERE id_medico = ?',
+        [id],
+        (error, result, fields) => {
+          conn.release();
+            
+          if(error) { return res.status(500).json({ error })}
+
+          return res.status(200).json({ message: 'Deletado com sucesso.' });
+        }
+      )
+
+    });
+  }
+
 }
 
 module.exports = new EspecialidadesMedicoController();
