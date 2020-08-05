@@ -10,11 +10,6 @@ Crie uma interface (página na web) aonde você consiga: CADASTRAR, ALTERAR e EX
  
 • Você deve usar: Node, JS, MYSQL • Você pode usar NPM, NODE, JS, MYSQL, CSS, NODEMON, HTML ou REACT, MVC, CONSING • Faça da forma em que se sentir mais confortável, deixe sua imaginação fluir.  
  
-# ----------------------- # # Dúvidas # # ----------------------- # 
- 
-• Chamar no whatsapp: (11) 94339-0983 - Wagner Augusto até às 20h  
- 
- 
 # ------ # # Especialidades a serem cadastradas no banco # # ------ # 
  
 • ALERGOLOGIA  •  ANGIOLOGIA  • • BUCO MAXILO  •  • CARDIOLOGIA CLÍNICA  •  • CARDIOLOGIA INFANTIL • CIRURGIA CABEÇA E PESCOÇO  • CIRURGIA CARDÍACA • CIRURGIA DE TORAX  • CIRURGIA GERAL • CIRURGIA PEDIÁTRICA • CIRURGIA PLÁSTICA • CIRURGIA TORÁCIC •  CIRURGIA VASCULAR  • CLÍNICA MÉDICA  • Ao término, se possível, hospedar o sisteminha funcionando, e nos enviar o código para análise. 
